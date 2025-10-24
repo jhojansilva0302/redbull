@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio - RedBull</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+  /* === Estilos Red Bull Neón - Integrado === */
+:root {
+  --redbull-blue: #ff0000;
+  --redbull-yellow: #fa0101bb;
+  --redbull-red: #b81414;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a0000, #300000 60%, #100000);
+  color: #ff4d00;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg,#0b0b0b,#1a0000);
+  border-bottom: 1px solid var(--redbull-red);
+  box-shadow: 0 0 20px rgba(183,20,20,0.2);
+}
+.navbar .navbar-brand { color: var(--redbull-yellow) !important; font-weight:700; }
+.navbar .nav-link { color: #ffb3a6 !important; }
+.navbar .nav-link.active { color: var(--redbull-yellow) !important; }
+
+/* Sections */
+.container.section { padding: 80px 0; color: #ffd1cc; }
+h1,h2,h3 { color: var(--redbull-yellow); }
+
+/* Cards / contact-card used across pages */
+.contact-card {
+  background: linear-gradient(145deg, #200000, #300000);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(255,51,0,0.27);
+  color: #ffdfdf;
+  transition: 0.3s;
+}
+.contact-card:hover { transform: translateY(-5px); box-shadow: 0 0 25px var(--redbull-yellow); }
+
+.form-control {
+  background-color: #0d0000;
+  border: 1px solid var(--redbull-red);
+  color: #fff;
+  border-radius: 8px;
+}
+.form-control:focus {
+  border-color: var(--redbull-yellow);
+  box-shadow: 0 0 10px var(--redbull-yellow);
+}
+
+.btn-neon {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--redbull-red), var(--redbull-yellow));
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(183,20,20,0.15);
+}
+.btn-neon:hover { box-shadow: 0 0 25px var(--redbull-yellow); transform: translateY(-2px); }
+
+/* Cards for projects/services */
+.card.custom {
+  background: linear-gradient(145deg,#170000,#2a0000);
+  border: 1px solid rgba(255,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.25);
+}
+.card.custom .card-body { background: rgba(255,255,255,0.02); }
+
+/* Footer */
+footer {
+  margin-top: auto;
+  background: linear-gradient(135deg, #100000, #220000);
+  border-top: 1px solid var(--redbull-red);
+  padding: 25px 0;
+  text-align: center;
+  color: #ffd1cc;
+}
+
+/* helper for placeholder images */
+.placeholder {
+  background: linear-gradient(135deg,#2b0b0b,#461212);
+  height: 260px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: rgba(255,255,255,0.6);
+  border-radius:8px;
+}
+
+/* Cards grid spacing */
+.row.g-4 > .col-md-4, .row.g-4 > .col-md-3 { margin-bottom: 20px; }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">RedBull</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+<section class="container section">
+  <h1>Portafolio</h1>
+  <p style="color:rgba(255,255,255,0.75);">Nuestros Records</p>
+
+  <div class="row g-4 mt-4">
+    <div class="col-md-4">
+      <div class="card custom">
+<div style=" width:auto;
+  height:200px;
+  
+  background:url('https://img.redbull.com/images/q_auto,f_auto/redbullcom/2013/05/17/1331591151559_2/salto-desde-la-c%C3%A1psula-de-felix-baumgartner.jpg') center/cover no-repeat;
+  margin:0 auto px;
+  box-shadow:0 0 20px var(--redbull-yellow);
+"></div>
+        <div class="card-body">
+          <h5>Sin miedo a nada</h5>
+          <p>Caída libre desde la altitud máxima: 128,000 pies (38,969 metros).</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4">
+      <div class="card custom">
+        <div style=" width:auto;
+  height:200px;
+  
+  background:url('https://www.centralweb.cl/wp-content/uploads/2025/03/el_nuevo_dueno_del_cielo_sebastian_alvarez_rompio_tres_records_mundiales_en_un_solo_salto_de_wingsuit_1.jpg') center/cover no-repeat;
+  margin:0 auto px;
+  box-shadow:0 0 20px var(--redbull-yellow);
+"></div>
+        <div class="card-body">
+          <h5>Redbull te da alas</h5>
+          <p>Caída libre más larga: Baumgartner cayó por 36,402.6 metros (119,431 pies).</p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card custom">
+        <div style=" width:auto;
+  height:200px;
+  
+  background:url('data:image/jpeg;base64,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') center/cover no-repeat;
+  margin:0 auto px;
+  box-shadow:0 0 20px var(--redbull-yellow);
+"></div>
+        <div class="card-body">
+          <h5>Los más rapidos</h5>
+          <p>Velocidad máxima de caída libre: 1,342.8 km/h (Mach 1.2), rompiendo la barrera del sonido. </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer>
+    <div class="container d-flex justify-content-between align-items-center">
+      <div>© 2025 RedBull</div>
+      <div>
+        <a href="formulario.html" style="color:var(--redbull-yellow); text-decoration:none; margin-right:18px;">Formulario</a>
+        
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
